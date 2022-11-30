@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<title>
+Angular JS Data Binding
+</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="myApp.js"></script>
+<script src="personCtrl.js"></script>
+<body ng-app="myApp">
+ <center><h2>Angular Js Program Using Data Binding </h2></center><br><br>
+ <div ng-controller="personCtrl">
+ 
+ First Name: <input type="text" ng-model="firstName"><br><br>
+ Last Name: <input type="text" ng-model="lastName"><br><br>
+ age : <input type="text" ng-model="age"><br>
+ <br>
+ Message : Hello {{fullName()}} <br>
+ 
+ </div> 
+ </body>
+ </html>
